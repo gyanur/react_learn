@@ -1,18 +1,17 @@
-import React from "react"
-
-
 
 function Header(){
     return(
+      <div>
       <header>
         <nav>
-            <ul  className="nav-item">
+            <ul>
               <li>Pricing</li>
               <li>About</li>
               <li>contant</li>
             </ul>
         </nav>
       </header>
+      </div>
     )
 }
 

@@ -1,6 +1,6 @@
   import React from "react"
   
-   export default function mainContent() {
+   export default function Maincontent() {
     return(
       <div>
       <h1>Reason I'am excited to learn React</h1>
