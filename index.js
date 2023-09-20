@@ -77,7 +77,7 @@
 //import React from "react";
 //import ReactDOM from "react-dom";
 
-const page = (
+/*const page = (
   <div>
     <h1>Fun Facts about React</h1>
     <ul>
@@ -89,3 +89,32 @@ const page = (
   </div>
 );
 ReactDOM.render(page, document.getElementById("root"));
+*/
+import React from "react"
+import React from "react-dom"
+ import Header from "./header"
+ import Footer from "./footer"
+ import MainContent from "./maincontent"
+ 
+
+/**challeng:
+ - Add an 'ul' inside the Header's 'nav' and create 
+ the following 'li's: "pricing", "About",& "contant"
+ */
+
+
+
+
+function page(){
+  return(
+    <div>
+       <Header/>
+        <mainContent/>
+         <Footer/>
+      </div>
+
+  )
+}
+
+
+ReactDOM.render(<page/>, document.getElementById("root"))
