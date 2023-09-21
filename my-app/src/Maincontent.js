@@ -1,6 +1,6 @@
-  import React from "react"
   
-   export default function Maincontent() {
+  
+    function Maincontent() {
     return(
       <div>
       <h1>Reason I'am excited to learn React</h1>
@@ -14,3 +14,4 @@
       </div>
     )
 }
+ export default Maincontent;

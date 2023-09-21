@@ -1,18 +1,26 @@
-
-function Header(){
-    return(
-      <div>
+function Header() {
+  return (
+    <div class="lili">
       <header>
-        <nav>
-            <ul>
-              <li>Pricing</li>
-              <li>About</li>
-              <li>contant</li>
-            </ul>
-        </nav>
-      </header>
-      </div>
-    )
+       <nav className="nav">
+          <div className = "boxs">
+          <div>
+          <img src="./logo192.png" alt="React Logo"  width="60"/>
+          </div>
+          <div>
+          <ul>
+            <li class = "line">Pricing</li>
+            <li class = "line">About</li>
+            <li class = "line">Contact</li>
+          </ul>
+          </div>
+          </div>
+          
+        </nav> 
+        </header>
+        </div>
+  );
 }
-
 export default Header;
+
+            
