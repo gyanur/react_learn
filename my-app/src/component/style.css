@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family:Inter,sans-serif ;
+}
+ nav{
+    display:flex;
+    align-items: center;
+    background-color: rgb(24, 24, 23);
+    padding: 30px 25px;
+}
+
+ nav > h3, nav> h4 {
+    margin: 0;
+ }
+
+ nav > h4{
+    color: aqua;
+    font-size: 20px;
+ }
+
+
+
+
+nav > h3{
+    margin-right: auto;
+    color:aqua;
+   font-size: 40px;
+} 
+
+
+main{
+    padding: 57px 27px;
+    background-color: rgb(62, 62, 60);
+     background-image:url('./logo512.png'); 
+ /* background-image: url(./component/image.jpeg); */
+    background-repeat:no-repeat ;
+    background-position-x: right;
+    color:white ;
+    
+}
+
+.main--title{
+    margin: 0;
+    font: size 40px; 
+    letter-spacing: -0.05em;
+    /* font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39.06px; */
+}
+
+.fact{
+    margin: top 45px; 
+}
+
+
+  .fact > li{
+    /* font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;  */
+    padding: 10px;
+  }
+   .fact  li::marker{
+        color: aqua;
+        font-size: 1.5em;
+            
+   }
+
+
+  nav > img{
+    height: 60px;
+margin: right 7px;
+ } 
