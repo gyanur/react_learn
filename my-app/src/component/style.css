@@ -1,5 +1,67 @@
 *{
     box-sizing: border-box;
+}  
+  body{
+    margin: 0;
+    font-family: poppings ,sans-serif ;
+
+
+  }
+   nav {
+    background-color: rgb(219, 219, 231);
+    display: flex;  
+    height: 100px ;
+ }
+.box{
+    font: size 100px;
+    font-weight: bold;
+    font-size: 39.06px;
+}
+
+ img{
+    background-color: rgb(216, 216, 230);
+ }
+ section{
+    padding: 20px;
+ }
+.hero{
+    display: flex;
+    flex-direction:column ;
+}
+.photo{
+    max-width: 600px;
+    align-self: center;
+}
+ .header{
+    margin-top: 0;
+ }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*
+    box-sizing: border-box;
 }
 body{
     margin:0;
@@ -35,8 +97,7 @@ main{
     padding: 57px 27px;
     background-color: rgb(62, 62, 60);
      background-image:url('./logo512.png'); 
- /* background-image: url(./component/image.jpeg); */
-    background-repeat:no-repeat ;
+     background-repeat:no-repeat ;
     background-position-x: right;
     color:white ;
     
@@ -46,23 +107,24 @@ main{
     margin: 0;
     font: size 40px; 
     letter-spacing: -0.05em;
-    /* font-family: Inter;
+     font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 39.06px; */
+    
+    font-size: 39.06px; 
 }
 
-.fact{
+ .fact{
     margin: top 45px; 
 }
 
 
   .fact > li{
-    /* font-family: Inter;
+     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;  */
+    line-height: 19px;  
     padding: 10px;
   }
    .fact  li::marker{
@@ -75,4 +137,4 @@ main{
   nav > img{
     height: 60px;
 margin: right 7px;
- } 
+ } */
