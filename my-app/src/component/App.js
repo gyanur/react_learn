@@ -1,85 +1,27 @@
-import React from 'react';
-import Navbar from './Navbar'; 
-import Hero from './Hero';
+
+
+import React from "react";
+import boxes from "./boxes"; // Import your data source
+import "./styles.css";
+import Box from "./Box";
+
+
 
 function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      </div>
-    )
+const [squares] = React.useState(boxes)
+
+
+
+const squareElement = squares.map(square=>  (
+  <Box key={square.id}  on={square.on} />
+
+))
+
+  return(
+    <main>
+      {squareElement}
+    </main>
+  )
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from "react";
-// import Navbar from "./Navbar"; // Correct the import path
-// import Main from "./Main"; // Correct the import path
-
-// import  "./style.css";
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Main />
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from "react";
-// import Navbar from "./Navbar"; // Correct the import path
-// import Main from "./Main"; // Correct the import path
-
-// import  "./style.css";
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Main />
-//     </>
-//   );
-// }
-
-// export default App;
