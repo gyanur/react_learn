@@ -1,0 +1,13 @@
+
+li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+nav{
+    padding: 10px;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
