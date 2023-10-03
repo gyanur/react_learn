@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Box sx={{ display: 'flex', height: '100vh' }}>
     <Box p={2} sx={{ width: '100%', height: '100vh', background: `url(${landing}) no-repeat`, backgroundSize: 'contain', objectPosition: 'centre' }}>
-      <img src={logo} alt="logo.png" width={600} />
+      <img src={logo} alt="logo.png" width='300'  font-size='40'/>
       <Box sx={{ display: 'flex', flexDirection: 'row' }} p={10} >
         <Box >
           <h1 sx={{ marginBottom: '20px', fontWeight: '900' }}>Supercharge your DevOps</h1>

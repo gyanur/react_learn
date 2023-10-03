@@ -6,10 +6,10 @@ const Layout = () => {
     <>
       <nav>
           <li>
-            <Link style={{color: '#1672E'}} to="/">Home</Link>
+            <Link style={{color: '#1672EC'}} to="/">Home</Link>
           </li>
           <li>
-            <Link style={{color: '#1672E'}} to="/contact">Contact</Link>
+            <Link style={{color: '#1672EC'}} to="/contact">Contact</Link>
           </li>
           <li>
             <Link style={{color: '#1672EC'}} to="Blogs">Blogs</Link>
