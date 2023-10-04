@@ -1,0 +1,19 @@
+
+body{
+  background-color: rgb(235, 220, 223);
+}
+
+.line{
+  display: inline-block;
+  padding : 10px
+  
+}
+.boxs{
+  display: flex;
+}
+.rot{
+  background-color: rgb(216, 188, 152);
+}
+.lili{
+  background-color: rgb(151, 155, 155);
+}
