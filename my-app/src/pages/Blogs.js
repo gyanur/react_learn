@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./glob.css";
 import blog from "./blog.jpg"; // Import the image without the "./src/pages" part
 import dash from "./dash.jpg"; // Import the image without the "./src/pages" part
 
@@ -10,7 +10,7 @@ const Navbar = () => {
   <div className="top">
       <div className="im border grey m-1">
         <div> 
-          <img src={blog} alt="Blog Logo" width="60" />
+          <img src={blog} alt="Blog Logo" width="60"  className="group"/>
         </div>
         <div className="mi px-3">Blog:</div>
         <div className="mi px-3">Find design inspapiration</div>
@@ -18,7 +18,7 @@ const Navbar = () => {
 
       <div className="im border grey m-1">
           <div>
-            <img src={dash} alt="Dashboard Logo" width="60" /> 
+           <img src={dash} alt="Dashboard Logo" width="60" className="group"/> 
           </div>
           <div className="mi px-3">Checklist:</div>
              <div className="mi px-3">Things to do Before Your First Day of Company</div>

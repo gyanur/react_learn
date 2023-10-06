@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./index.css";
 import landing from "./Landing_page.jpg"; // Import the image without the "./src/pages" part
 import logo from "./logo.png"; // Import the image without the "./src/pages"
 import { Box, Button, TextField, Typography, Card } from '@mui/material';
 
+
+
+
 const Home = () => {
+  // cont[name,]
+  const[email,setEmail]=useState("");
+
+  function server(){
+  document.write(email)
+  }
+
+  
   return (
     <Box sx={{ display: 'flex', height: '100vh' }}>
     <Box p={2} sx={{ width: '100%', height: '100vh', background: `url(${landing}) no-repeat`, backgroundSize: 'contain', objectPosition: 'centre' }}>
       <img src={logo} alt="logo.png" width='300'  font-size='40'/>
       <Box sx={{ display: 'flex', flexDirection: 'row' }} p={10} >
-        <Box >
+        <Box>
           <h1 sx={{ marginBottom: '20px', fontWeight: '900' }}>Supercharge your DevOps</h1>
           <h4>Get started with our tools</h4>
         </Box>
@@ -21,16 +33,18 @@ const Home = () => {
               label="Enter your email"
               fullWidth
               sx={{ marginBottom: '20px', marginTop: 'auto', backgroundColor: 'white' }}
+              value={email} onChange={(e)=>{setEmail(e.target.value)}} name="email"
             />
             <Button
               variant="contained"
               sx={{
-                marginBottom: '20px',
+              marginBottom: '20px',
                 backgroundColor: '#1672EC',
                 color: 'white',
                 boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.2)',
                 '&:hover': {
                   backgroundColor: '#034EA2',
+                
                 },
               }}
             >
@@ -52,6 +66,7 @@ const Home = () => {
             >
               LinkedIn
             </Button>
+            <Button type="button" onclick="server">new</Button>
           </Box>
         </Card>
       </Box>
