@@ -1,7 +1,12 @@
 import "./index.css";
 import lady from "./lady.jpg"; // Import the image without the "./src/pages" part
 
+
 const Contact = () => {
+
+
+
+
   return (
     <div>
       <div  style ={{ width: '100%', height: '100vh', background: `url(${lady}) no-repeat`, backgroundSize: 'contain', objectPosition: 'centre' }}> 
@@ -14,7 +19,7 @@ const Contact = () => {
     </div>
 
   <div className="mb-3">
-    <label for="exampleInputLastName" className="form-label">LastName:</label>
+    <label for="exampleInputLastName" className="form-label" >LastName:</label>
     <input type="LaststName" className="form-control" id="exampleInputLastName"/>
   </div>
   <div className="mb-3">
