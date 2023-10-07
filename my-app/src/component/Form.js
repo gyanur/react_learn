@@ -44,13 +44,13 @@ return (
       value={formData.emailName}
     />
 
-    <textarea 
+    <textarea
     value={formData.comments}
     placeholder="comments"
     onChange={handleChange}
     name="comment"
     />
-    <input type="checkbox" 
+    <input type="checkbox"
     id="isFriendly"
     checked={formData.isFriendly}/>
 
