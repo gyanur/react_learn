@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(237, 239, 239);
+    padding: 20px;
+}
+main{
+    background-color:rgb(235, 229, 230);
+    height: 200px;
+    max-width: 400px;
+    border-radius: 5px;
+    padding :20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dice-container{
+    display: grid;
+    grid-template: auto auto /  repeat(5, 1fr);
+    gap:20px;
+
+}
+.die-face{
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+    padding:5px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
