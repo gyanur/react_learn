@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function File() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -8,17 +9,17 @@ function File() {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/saveData', {
+      const response = await fetch('http://localhost:3000/api/saveData', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ name, email }),
       });
 
       if (response.ok) {
-        console.log('Data saved successfully!');
-        // You can reset form fields or perform other actions here
+        console.log({ name, email });
       } else {
         console.error('Failed to save data.');
       }
@@ -49,5 +50,6 @@ function File() {
     </form>
   );
 }
+
 
 export default File;
