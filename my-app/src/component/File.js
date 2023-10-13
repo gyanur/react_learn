@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+ 
 function File() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

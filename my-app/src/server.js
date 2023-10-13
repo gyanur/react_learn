@@ -34,15 +34,15 @@ app.post('/api/saveData', (req, res) => {
     values: [name, email],
   };
 
-  client.query(query)
-    // if (err) {
-    //   console.error('Error saving data:', err);
-    //   res.status(500).json({ error: 'Failed to save data.' });
-    // } else {
-    //   res.json({ message: 'Data saved successfully!', savedData: result.rows[0] });
-    // }
-
- });
+  client.query(query, (err, result) => {
+    if (err) {
+      console.error('Error saving data:', err);
+      res.status(500).json({ error: 'Failed to save data.' });
+    } else {
+      res.json({ message: 'Data saved successfully!', savedData: result.rows[0] });
+    }
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
