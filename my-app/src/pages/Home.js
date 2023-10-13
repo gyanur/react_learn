@@ -10,9 +10,12 @@ import { Box, Button, TextField, Typography, Card } from '@mui/material';
 const Home = () => {
   // cont[name,]
   const[email,setEmail]=useState("");
+  const[submmittedEmail,setSubmmittedEmail]=useState("");
+
 
   function server(){
-  document.write(email)
+    setSubmmittedEmail(email);
+    setEmail("");
   }
 
   
@@ -26,6 +29,7 @@ const Home = () => {
           <h4>Get started with our tools</h4>
         </Box>
         <Card style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(255 , 255, 255, 0.5)', marginLeft: 'auto', padding: '20px', height: '50vh', width: '400px' }}  >
+          <p>your email is : <span  style={{fontWeight: 'bold'}}>{submmittedEmail}</span></p>
           <Box className='d-flex flex-column h-100'>
             <h3 className='highlight mb-auto'><b>Login</b></h3>
             <TextField
@@ -36,6 +40,7 @@ const Home = () => {
               value={email} onChange={(e)=>{setEmail(e.target.value)}} name="email"
             />
             <Button
+              onClick={server}
               variant="contained"
               sx={{
               marginBottom: '20px',
@@ -52,7 +57,6 @@ const Home = () => {
             </Button>
             <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: '15px' }}>or continue with</Typography>
             <Button
-              onClick=""
               variant="contained"
               sx={{
                 marginBottom: 'auto',
@@ -66,7 +70,6 @@ const Home = () => {
             >
               LinkedIn
             </Button>
-            <Button type="button" onclick="server">new</Button>
           </Box>
         </Card>
       </Box>

@@ -18,7 +18,11 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+// import App from "./App";
+// import Promise from "./component/Promise";
+import File from "./component/File";
 
-
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(
+  // <Promise/>,
+   <File/>,
+ document.getElementById("root"));
