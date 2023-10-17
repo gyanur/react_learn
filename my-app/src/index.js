@@ -16,13 +16,29 @@
 
 
 
-import React from "react";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// // import App from "./App";
+// // import Promise from "./component/Promise";
+// import File from "./component/File";
+
+// ReactDOM.render(
+//   // <Promise/>,
+//    <File/>,
+//  document.getElementById("root"));
+
+
+
+
+
+
+ import React from "react";
 import ReactDOM from "react-dom";
 // import App from "./App";
 // import Promise from "./component/Promise";
-import File from "./component/File";
+import Note from "./component/Note";
 
 ReactDOM.render(
   // <Promise/>,
-   <File/>,
+   <Note/>,
  document.getElementById("root"));
